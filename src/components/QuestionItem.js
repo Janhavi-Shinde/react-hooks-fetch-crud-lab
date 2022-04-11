@@ -1,25 +1,30 @@
 import React from "react";
 
-function QuestionItem({ question }) {
-  const { id, prompt, answers, correctIndex } = question;
+function QuestionItem() {
+  // console.log(question); // array of 6 objects
+  // const [ one , two, three, four, five, six] = question
+  // console.log(one);
+  // const [{ id, prompt, answers, correctIndex }] = question;
+  // console.log(answers); //undefined
 
-  const options = answers.map((answer, index) => (
-    <option key={index} value={index}>
-      {answer}
-    </option>
-  ));
+  // console.log({question});
+  // const answerB = question.map(q => q.answers);
+  // const idB = question.map(q => q.id);
+  // const promptB = question.map(q => q.prompt);
+  // const correctIndexB = question.map(q => q.correctIndex);
+
+
 
   return (
-    <li>
-      <h4>Question {id}</h4>
-      <h5>Prompt: {prompt}</h5>
-      <label>
-        Correct Answer:
-        <select defaultValue={correctIndex}>{options}</select>
-      </label>
-      <button>Delete Question</button>
-    </li>
-  );
+    <> 
+    {/* {list} */}
+    </>)
 }
+
+
+
+
+
+
 
 export default QuestionItem;
